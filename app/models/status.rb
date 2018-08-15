@@ -448,6 +448,8 @@ class Status < ApplicationRecord
   end
 
   def increment_counter_caches
+    thread.increment_count!(:replies_count) if in_reply_to_id.present? && more_permissive_than_parent?
+
     return if direct_visibility?
 
     if association(:account).loaded?
@@ -456,12 +458,15 @@ class Status < ApplicationRecord
       Account.where(id: account_id).update_all('statuses_count = COALESCE(statuses_count, 0) + 1')
     end
 
-    thread.increment_count!(:replies_count) if in_reply_to_id.present?
     reblog.increment_count!(:reblogs_count) if reblog?
   end
 
   def decrement_counter_caches
-    return if direct_visibility? || marked_for_mass_destruction?
+    return if marked_for_mass_destruction?
+
+    thread.decrement_count!(:replies_count) if in_reply_to_id.present? && more_permissive_than_parent?
+
+    return if direct_visibility?
 
     if association(:account).loaded?
       account.update_attribute(:statuses_count, [account.statuses_count - 1, 0].max)
@@ -469,7 +474,13 @@ class Status < ApplicationRecord
       Account.where(id: account_id).update_all('statuses_count = GREATEST(COALESCE(statuses_count, 0) - 1, 0)')
     end
 
-    thread.decrement_count!(:replies_count) if in_reply_to_id.present?
     reblog.decrement_count!(:reblogs_count) if reblog?
+  end
+
+  def more_permissive_than_parent?
+    # This method relies on the enum being ordered from more public
+    # to less public (0 public, 3 direct) and using the underlying
+    # integer representation before Rails typecasts them to strings
+    visibility_before_type_cast <= thread.visibility_before_type_cast
   end
 end
