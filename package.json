@@ -107,7 +107,7 @@
     "requestidlecallback": "^0.3.0",
     "reselect": "^3.0.1",
     "rimraf": "^2.6.1",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^11.0.1",
     "stringz": "^0.3.0",
     "style-loader": "^0.21.0",
     "substring-trie": "^1.0.2",
