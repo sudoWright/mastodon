@@ -60,7 +60,7 @@
     "intersection-observer": "^0.5.0",
     "intl": "^1.2.5",
     "intl-messageformat": "^2.2.0",
-    "intl-relativeformat": "^2.1.0",
+    "intl-relativeformat": "^6.4.3",
     "is-nan": "^1.2.1",
     "mark-loader": "^0.1.6",
     "marky": "^1.2.0",
