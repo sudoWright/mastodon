@@ -22,7 +22,7 @@ gem 'paperclip-av-transcoder', '~> 0.6'
 gem 'streamio-ffmpeg', '~> 3.0'
 
 gem 'active_model_serializers', '~> 0.10'
-gem 'addressable', '~> 2.5'
+gem 'addressable', '~> 2.8', '>= 2.8.0'
 gem 'bootsnap', '~> 1.3'
 gem 'browser'
 gem 'charlock_holmes', '~> 0.7.6'
@@ -37,18 +37,18 @@ group :pam_authentication, optional: true do
 end
 
 gem 'net-ldap', '~> 0.10'
-gem 'omniauth-cas', '~> 1.1'
+gem 'omniauth-cas', '~> 1.1', '>= 1.1.1'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth', '~> 1.2'
 
 gem 'doorkeeper', '~> 4.4'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
-gem 'goldfinger', '~> 2.1'
+gem 'goldfinger', '~> 2.1', '>= 2.1.0'
 gem 'hiredis', '~> 0.6'
 gem 'redis-namespace', '~> 1.5'
 gem 'htmlentities', '~> 4.3'
-gem 'http', '~> 3.2'
+gem 'http', '~> 3.2', '>= 3.2.0'
 gem 'http_accept_language', '~> 2.1'
 gem 'http_parser.rb', '~> 0.6', git: 'https://github.com/tmm1/http_parser.rb', ref: '54b17ba8c7d8d20a16dfc65d1775241833219cf2'
 gem 'httplog', '~> 1.0'
@@ -59,11 +59,11 @@ gem 'mime-types', '~> 3.1', require: 'mime/types/columnar'
 gem 'nokogiri', '~> 1.8'
 gem 'nsa', '~> 0.2'
 gem 'oj', '~> 3.5'
-gem 'ostatus2', '~> 2.0'
+gem 'ostatus2', '~> 2.0', '>= 2.0.3'
 gem 'ox', '~> 2.9'
 gem 'posix-spawn', git: 'https://github.com/rtomayko/posix-spawn', ref: '58465d2e213991f8afb13b984854a49fcdcc980c'
 gem 'pundit', '~> 1.1'
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.2'
 gem 'rack-attack', '~> 5.2'
 gem 'rack-cors', '~> 1.0', require: 'rack/cors'
 gem 'rails-i18n', '~> 5.1'
@@ -106,14 +106,14 @@ group :production, :test do
 end
 
 group :test do
-  gem 'capybara', '~> 2.18'
+  gem 'capybara', '~> 2.18', '>= 2.18.0'
   gem 'climate_control', '~> 0.2'
   gem 'faker', '~> 1.8'
   gem 'microformats', '~> 4.0'
   gem 'rails-controller-testing', '~> 1.0'
   gem 'rspec-sidekiq', '~> 3.0'
   gem 'simplecov', '~> 0.16', require: false
-  gem 'webmock', '~> 3.3'
+  gem 'webmock', '~> 3.3', '>= 3.3.0'
   gem 'parallel_tests', '~> 2.21'
 end
 
@@ -123,8 +123,8 @@ group :development do
   gem 'better_errors', '~> 2.4'
   gem 'binding_of_caller', '~> 0.7'
   gem 'bullet', '~> 5.7'
-  gem 'letter_opener', '~> 1.4'
-  gem 'letter_opener_web', '~> 1.3'
+  gem 'letter_opener', '~> 1.6', '>= 1.6.0'
+  gem 'letter_opener_web', '~> 1.3', '>= 1.3.4'
   gem 'memory_profiler'
   gem 'rubocop', '~> 0.55', require: false
   gem 'brakeman', '~> 4.2', require: false
