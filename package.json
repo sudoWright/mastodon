@@ -43,7 +43,7 @@
     "classnames": "^2.2.5",
     "compression-webpack-plugin": "^4.0.0",
     "cross-env": "^5.1.4",
-    "css-loader": "^1.0.0",
+    "css-loader": "^6.5.1",
     "detect-passive-events": "^1.0.2",
     "dotenv": "^4.0.0",
     "emoji-mart": "Gargron/emoji-mart#build",
