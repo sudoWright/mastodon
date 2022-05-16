@@ -21,7 +21,7 @@
   "private": true,
   "dependencies": {
     "array-includes": "^3.0.3",
-    "autoprefixer": "^8.6.5",
+    "autoprefixer": "^9.0.0",
     "axios": "~0.19.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -78,7 +78,7 @@
     "postcss-loader": "^2.1.6",
     "postcss-object-fit-images": "^1.1.2",
     "postcss-smart-import": "^0.7.6",
-    "precss": "^3.1.2",
+    "precss": "^4.0.0",
     "prop-types": "^15.5.10",
     "punycode": "^2.1.0",
     "rails-ujs": "^5.2.0",
