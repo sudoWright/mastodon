@@ -74,7 +74,7 @@
     "object.values": "^1.0.4",
     "offline-plugin": "^5.0.5",
     "path-complete-extname": "^1.0.0",
-    "pg": "^6.4.0",
+    "pg": "^8.7.3",
     "postcss-loader": "^2.1.6",
     "postcss-object-fit-images": "^1.1.2",
     "postcss-smart-import": "^0.7.6",
