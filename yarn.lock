@@ -123,6 +123,11 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@snyk/protect@^1.940.0":
+  version "1.940.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.940.0.tgz#1a5cba0197dd7b918d0fa3d6880f1ace53c04aba"
+  integrity sha512-vAhtQ0riui/948ce47WEB0FgJx3eKHMkkyU48MQJij49eLFKaCUiz/gzXiR4nm5O8najwjLa3q6dtLhqm8RI8A==
+
 "@types/json-schema@^7.0.5":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
