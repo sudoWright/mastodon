@@ -6,7 +6,7 @@ ruby '>= 2.3.0', '< 2.6.0'
 gem 'pkg-config', '~> 1.3'
 
 gem 'puma', '~> 3.11'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 gem 'hamlit-rails', '~> 0.2'
 gem 'pg', '~> 1.0'
@@ -67,7 +67,7 @@ gem 'premailer-rails'
 gem 'rack-attack', '~> 5.2'
 gem 'rack-cors', '~> 1.0', require: 'rack/cors'
 gem 'rails-i18n', '~> 5.1'
-gem 'rails-settings-cached', '~> 0.6'
+gem 'rails-settings-cached', '~> 0.6', '>= 0.6.6'
 gem 'redis', '~> 4.0', require: ['redis', 'redis/connection/hiredis']
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'rqrcode', '~> 0.10'
