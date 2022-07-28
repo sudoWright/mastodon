@@ -6,11 +6,11 @@ ruby '>= 2.3.0', '< 2.6.0'
 gem 'pkg-config', '~> 1.3'
 
 gem 'puma', '~> 3.11'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 gem 'hamlit-rails', '~> 0.2'
 gem 'pg', '~> 1.0'
-gem 'pghero', '~> 2.1'
+gem 'pghero', '~> 2.1', '>= 2.1.0'
 gem 'dotenv-rails', '~> 2.2', '< 2.3'
 
 gem 'aws-sdk-s3', '~> 1.9', require: false
@@ -53,7 +53,7 @@ gem 'http_accept_language', '~> 2.1'
 gem 'http_parser.rb', '~> 0.6', git: 'https://github.com/tmm1/http_parser.rb', ref: '54b17ba8c7d8d20a16dfc65d1775241833219cf2'
 gem 'httplog', '~> 1.0'
 gem 'idn-ruby', require: 'idn'
-gem 'kaminari', '~> 1.1'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'link_header', '~> 0.0'
 gem 'mime-types', '~> 3.1', require: 'mime/types/columnar'
 gem 'nokogiri', '~> 1.8'
@@ -67,7 +67,7 @@ gem 'premailer-rails'
 gem 'rack-attack', '~> 5.2'
 gem 'rack-cors', '~> 1.0', require: 'rack/cors'
 gem 'rails-i18n', '~> 5.1'
-gem 'rails-settings-cached', '~> 0.6'
+gem 'rails-settings-cached', '~> 0.6', '>= 0.6.6'
 gem 'redis', '~> 4.0', require: ['redis', 'redis/connection/hiredis']
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'rqrcode', '~> 0.10'
@@ -81,7 +81,7 @@ gem 'simple-navigation', '~> 4.0'
 gem 'simple_form', '~> 4.0'
 gem 'sprockets-rails', '~> 3.2', require: 'sprockets/railtie'
 gem 'stoplight', '~> 2.1.3'
-gem 'strong_migrations', '~> 0.2'
+gem 'strong_migrations', '~> 0.2', '>= 0.2.2'
 gem 'tty-command', '~> 0.8', require: false
 gem 'tty-prompt', '~> 0.16', require: false
 gem 'twitter-text', '~> 1.14'
@@ -119,7 +119,7 @@ end
 
 group :development do
   gem 'active_record_query_trace', '~> 1.5'
-  gem 'annotate', '~> 2.7'
+  gem 'annotate', '~> 2.7', '>= 2.7.3'
   gem 'better_errors', '~> 2.4'
   gem 'binding_of_caller', '~> 0.7'
   gem 'bullet', '~> 5.7'
