@@ -39,10 +39,10 @@ end
 
 gem 'net-ldap', '~> 0.17'
 gem 'omniauth-cas', '~> 2.0'
-gem 'omniauth-saml', '~> 1.10'
-gem 'gitlab-omniauth-openid-connect', '~>0.10.0', require: 'omniauth_openid_connect'
-gem 'omniauth', '~> 1.9'
-gem 'omniauth-rails_csrf_protection', '~> 0.1'
+gem 'omniauth-saml', '~> 2.0', '>= 2.0.0'
+gem 'gitlab-omniauth-openid-connect', '~> 0.10.0', require: 'omniauth_openid_connect'
+gem 'omniauth', '~> 2.0', '>= 2.0.0'
+gem 'omniauth-rails_csrf_protection', '~> 0.1', '>= 0.1.2'
 
 gem 'color_diff', '~> 0.1'
 gem 'discard', '~> 1.2'
