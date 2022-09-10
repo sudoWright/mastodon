@@ -38,7 +38,7 @@ group :pam_authentication, optional: true do
 end
 
 gem 'net-ldap', '~> 0.17'
-gem 'omniauth-cas', '~> 2.0'
+gem 'omniauth-cas', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-saml', '~> 1.10'
 gem 'gitlab-omniauth-openid-connect', '~>0.10.0', require: 'omniauth_openid_connect'
 gem 'omniauth', '~> 1.9'
