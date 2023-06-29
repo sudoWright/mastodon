@@ -6,7 +6,7 @@ ruby '>= 2.7.0', '< 3.3.0'
 gem 'pkg-config', '~> 1.5'
 
 gem 'puma', '~> 6.1'
-gem 'rails', '~> 6.1.7'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.4'
 gem 'sprockets', '~> 3.7.2'
 gem 'thor', '~> 1.2'
 gem 'rack', '~> 2.2.6'
@@ -29,8 +29,8 @@ gem 'bootsnap', '~> 1.16.0', require: false
 gem 'browser'
 gem 'charlock_holmes', '~> 0.7.7'
 gem 'chewy', '~> 7.2'
-gem 'devise', '~> 4.9'
-gem 'devise-two-factor', '~> 4.0'
+gem 'devise', '~> 4.9', '>= 4.9.1'
+gem 'devise-two-factor', '~> 4.1', '>= 4.1.0'
 
 group :pam_authentication, optional: true do
   gem 'devise_pam_authenticatable2', '~> 9.2'
@@ -41,11 +41,11 @@ gem 'omniauth-cas', '~> 2.0'
 gem 'omniauth-saml', '~> 1.10'
 gem 'omniauth_openid_connect', '~> 0.6.1'
 gem 'omniauth', '~> 1.9'
-gem 'omniauth-rails_csrf_protection', '~> 0.1'
+gem 'omniauth-rails_csrf_protection', '~> 1.0', '>= 1.0.0'
 
 gem 'color_diff', '~> 0.1'
 gem 'discard', '~> 1.2'
-gem 'doorkeeper', '~> 5.6'
+gem 'doorkeeper', '~> 5.6', '>= 5.6.6'
 gem 'ed25519', '~> 1.3'
 gem 'fast_blank', '~> 1.0'
 gem 'fastimage'
@@ -70,7 +70,7 @@ gem 'pundit', '~> 2.3'
 gem 'premailer-rails'
 gem 'rack-attack', '~> 6.6'
 gem 'rack-cors', '~> 2.0', require: 'rack/cors'
-gem 'rails-i18n', '~> 6.0'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.1'
 gem 'rails-settings-cached', '~> 0.6', git: 'https://github.com/mastodon/rails-settings-cached.git', branch: 'v0.6.6-aliases-true'
 gem 'redcarpet', '~> 3.6'
 gem 'redis', '~> 4.5', require: ['redis', 'redis/connection/hiredis']
@@ -103,7 +103,7 @@ group :development, :test do
   gem 'fabrication', '~> 2.30'
   gem 'fuubar', '~> 2.5'
   gem 'i18n-tasks', '~> 1.0', require: false
-  gem 'rspec-rails', '~> 6.0'
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
   gem 'rspec_chunked', '~> 0.6'
 
   gem 'rubocop-capybara', require: false
