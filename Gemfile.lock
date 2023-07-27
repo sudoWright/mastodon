@@ -505,9 +505,9 @@ GEM
       activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.6.2)
-    rack (2.2.6.4)
-    rack-attack (6.6.1)
-      rack (>= 1.0, < 3)
+    rack (2.2.7)
+    rack-attack (6.7.0)
+      rack (>= 1.0, < 4)
     rack-cors (2.0.1)
       rack (>= 2.0.0)
     rack-oauth2 (1.21.3)
@@ -847,7 +847,7 @@ DEPENDENCIES
   puma (~> 6.1)
   pundit (~> 2.3)
   rack (~> 2.2.6)
-  rack-attack (~> 6.6)
+  rack-attack (~> 6.7, >= 6.7.0)
   rack-cors (~> 2.0)
   rack-test (~> 2.1)
   rails (~> 6.1.7)
@@ -892,3 +892,9 @@ DEPENDENCIES
   webpacker (~> 5.4)
   webpush!
   xorcist (~> 1.1)
+
+RUBY VERSION
+   ruby 2.7.8p225
+
+BUNDLED WITH
+   2.1.4
